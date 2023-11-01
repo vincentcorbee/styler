@@ -1,0 +1,21 @@
+{
+  "name": "@digitalbranch/styler",
+  "version": "1.0.0",
+  "description": "Teriminal text styler",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "main": "./dist/src/index.js",
+  "keywords": [],
+  "author": "V.J.M. Corbee",
+  "license": "ISC",
+  "engines": {
+    "node": "18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
