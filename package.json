@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Teriminal text styler",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "watch": "tsc --watch"
   },
-  "main": "./dist/src/index.js",
+  "main": "./dist/index.js",
   "keywords": [],
   "author": "V.J.M. Corbee",
   "license": "ISC",

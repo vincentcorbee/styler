@@ -32,16 +32,30 @@ export interface StylerInstance {
   readonly brightMagenta: StylerInstance;
   readonly brightWhite: StylerInstance;
 
-  readonly BgBlack: StylerInstance;
-  readonly BgRed: StylerInstance;
-  readonly BgGreen: StylerInstance;
-  readonly BgYellow: StylerInstance;
-  readonly BgBlue: StylerInstance;
-  readonly BgMagenta: StylerInstance;
-  readonly BgCyan: StylerInstance;
-  readonly BgWhite: StylerInstance;
+  readonly bgBlack: StylerInstance;
+  readonly bgRed: StylerInstance;
+  readonly bgGreen: StylerInstance;
+  readonly bgYellow: StylerInstance;
+  readonly bgBlue: StylerInstance;
+  readonly bgMagenta: StylerInstance;
+  readonly bgCyan: StylerInstance;
+  readonly bgWhite: StylerInstance;
+
+  readonly bgBrightBlack: StylerInstance;
+  readonly bgBrightRed: StylerInstance;
+  readonly bgBrightGreen: StylerInstance;
+  readonly bgBrightYellow: StylerInstance;
+  readonly bgBrightBlue: StylerInstance;
+  readonly bgBrightMagenta: StylerInstance;
+  readonly bgBrightCyan: StylerInstance;
+  readonly bgBrightWhite: StylerInstance;
 
   readonly alternativeFont1: StylerInstance;
+
+  readonly rgb: (r: number, b: number, c: number) => StylerInstance;
+  readonly bgRgb: (r: number, b: number, c: number) => StylerInstance;
+  readonly fg256: (color: number) => StylerInstance;
+  readonly bg256: (color: number) => StylerInstance;
 
   readonly styles: Array<string | number>;
   readonly colorLevel: ColorLevel
